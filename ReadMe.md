@@ -1,7 +1,9 @@
 
-Scientific Calculator in Java
+**Scientific Calculator in Java**
+----------------------------------
 
 Overview
+---------
 This project is a Scientific Calculator implemented in Java, leveraging Object-Oriented Programming (OOP) principles. It offers a wide range of mathematical operations, including arithmetic, geometric, exponential, and advanced functions such as factorial, permutation, and combination. The calculator also supports matrix operations (e.g., addition, subtraction, multiplication, transpose, determinant, inverse, scalar multiplication, and eigenvalues/eigenvectors) and unit conversions (e.g., degrees/radians, Celsius/Fahrenheit). It features a history functionality to track past calculations.
 
 Designed to be modular, extensible, and user-friendly, this calculator demonstrates how Java’s OOP features (inheritance, polymorphism, encapsulation, and abstraction) can be used to build robust and maintainable applications.
@@ -9,53 +11,55 @@ Designed to be modular, extensible, and user-friendly, this calculator demonstra
 ---
 
 Features
+---------
 
-1. Arithmetic Operations
+1. *Arithmetic Operations*
    - Addition, Subtraction, Multiplication, Division
    - Modulus (Remainder), Absolute Value
 
-2. Geometric Operations
+2. *Geometric Operations*
    - Trigonometric Functions: Sine, Cosine, Tangent
    - Hyperbolic Functions: Sinh, Cosh, Tanh
    - Supports both Degrees and Radians
 
-3. Exponential and Logarithmic Operations
+3. *Exponential and Logarithmic Operations*
    - Power Function (x^y), Square, Square Root, Cubic
    - Logarithm (Base 10), Natural Logarithm (ln), Exponential Function (e^x)
 
-4. Advanced Mathematical Functions
+4. *Advanced Mathematical Functions*
    - Factorial
    - Permutation (nPr)
    - Combination (nCr)
 
-5. Unit Conversion
+5. *Unit Conversion*
    - Degrees to Radians, Radians to Degrees
    - Celsius to Fahrenheit, Fahrenheit to Celsius
 
-6. Matrix Operations
+6. *Matrix Operations*
    - Matrix Addition, Subtraction, Multiplication
    - Matrix Transpose, Determinant, Inverse
    - Scalar Multiplication
    - Eigenvalues and Eigenvectors (Placeholder for future implementation)
 
-7. User-Friendly Interface
+7. *User-Friendly Interface*
    - Clear menu-driven interface
    - Welcome message and help menu
    - Input validation for robust error handling
 
-8. History Feature
+8. *History Feature*
    - Stores and displays past calculations for easy reference
 
-9. Precision Setting
+9. *Precision Setting*
    - Supports up to 4 decimal places for accurate results
 
 ---
 
 How to Use
+----------
 
 1. Clone the Repository:
-   git clone https://github.com/your-username/scientific-calculator-java.git
-   cd scientific-calculator-java
+    git clone https://github.com/shemaiscard/scientific-calculator-java.git
+   cd scientific-calculator-java  
 
 2. Compile and Run:
    javac CALCULATOR/Calculator.java
@@ -69,17 +73,18 @@ How to Use
 ---
 
 Code Structure
+-------------
 
-- Interfaces:
+- **Interfaces**:
   - Arithmetic: Defines basic arithmetic operations.
   - Geometrics: Defines trigonometric and hyperbolic functions.
   - Exponential: Defines exponential, logarithmic, and advanced functions.
   - MatrixOperations: Defines matrix operations like addition, subtraction, multiplication, transpose, determinant, inverse, and scalar multiplication.
 
-- Main Class:
+- **Main Class**:
   - Calculator: Implements all interfaces and handles user interaction.
 
-- Helper Methods:
+- **Helper Methods**:
   - getInput: Reads user input.
   - formatDouble: Formats output to 4 decimal places.
   - addToHistory: Stores calculation history.
@@ -88,6 +93,7 @@ Code Structure
 ---
 
 Key OOP Concepts Used
+------------------------
 
 - Inheritance: Classes extend functionality through inheritance.
 - Polymorphism: Methods like addition and subtraction handle multiple inputs.
@@ -97,40 +103,26 @@ Key OOP Concepts Used
 ---
 
 Challenges and Solutions
+------------------------
 
-- Trigonometric Functions:
+- *Trigonometric Functions*:
   - Challenge: Supporting both degrees and radians.
   - Solution: Used Java's Math library for accurate calculations.
 
-- Input Validation:
+- *Input Validation*:
   - Challenge: Handling invalid inputs gracefully.
   - Solution: Added try-catch blocks and error messages for better error handling.
 
-- Matrix Operations:
+- *Matrix Operations*:
   - Challenge: Implementing complex operations like determinant and inverse.
   - Solution: Used recursive algorithms for determinant and adjugate matrix for inverse.
 
 ---
 
-Future Enhancements
+**Conclusion**
+This Scientific Calculator project demonstrates the power of Java's OOP features in building a versatile and user-friendly application.
+It is an excellent tool for students, engineers, and anyone who needs to perform complex mathematical calculations.
 
-- Add a Graphical User Interface (GUI) using JavaFX or Swing.
-- Support for complex number calculations.
-- Implement eigenvalues and eigenvectors using numerical methods.
-- Add matrix exponentiation and matrix logarithm.
-- Support for 3D vector operations and quaternions.
+------
 
----
-
-Conclusion
-This Scientific Calculator project demonstrates the power of Java's OOP features in building a versatile and user-friendly application. It is an excellent tool for students, engineers, and anyone who needs to perform complex mathematical calculations.
-
----
-
-Contact
-For questions or feedback, feel free to reach out to:
-
-Shema Giscard
-Email: shemagiscard2020@gmail.com
-
-May the force be with you! 🚀
+**May the force be with you! 🚀**
