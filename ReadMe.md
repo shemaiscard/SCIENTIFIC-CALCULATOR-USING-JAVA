@@ -1,39 +1,41 @@
-# Scientific Calculator — Java
+# Scientific Calculator (Java)
 
-A desktop scientific calculator built in **Java** using OOP principles. Supports arithmetic, geometric, and exponential operations with a graphical user interface.
+A menu-driven scientific calculator that runs in the terminal, written as an exercise in object-oriented Java.
 
 ## Features
 
-- Basic arithmetic: addition, subtraction, multiplication, division
-- Scientific operations: powers, square roots, logarithms, trigonometry
-- Geometric calculations
-- Clean GUI built with Java Swing
+| Menu | Operations |
+| --- | --- |
+| 1. Arithmetic | addition, subtraction, multiplication, division, modulus, absolute value |
+| 2. Trigonometry | sine, cosine, tangent and their hyperbolic versions |
+| 3. Exponential and logarithmic | power, square root, nth root, log, ln |
+| 4. Combinatorics | factorial, permutation, combination |
+| 5. Unit conversion | degrees and radians, Celsius and Fahrenheit |
+| 6. Matrices | addition, subtraction, multiplication, transpose |
+| 7. History | every result from the session |
+| 9. Help | what each menu does |
 
-## Requirements
+You pick an option from the numbered menu and type the inputs. `Scanner` reads them from the console.
 
-- Java JDK 8 or higher
+## Design
 
-## Build & Run
+Each group of operations is an interface: `Arithmetic`, `Geometrics` (the trigonometric functions), `Exponential` and `MatrixOperations`. One `Calculator` class implements them, and the math comes from `java.lang.Math`.
 
-**Compile:**
+## Run it
+
+Requires Java 8 or later.
+
 ```bash
 javac Main.java
-```
-
-**Run:**
-```bash
 java Main
 ```
 
-Or open the project in any Java IDE (IntelliJ IDEA, Eclipse, NetBeans) and run `Main.java` directly.
+Or open the folder in IntelliJ IDEA, Eclipse or NetBeans and run `Main.java`.
 
-## Project Structure
+## Tech stack
 
-```
-SCIENTIFIC-CALCULATOR-USING-JAVA/
-├── Main.java      Application entry point and GUI logic
-└── LICENSE
-```
+Java, OOP with interfaces, console menus with `Scanner`, `java.lang.Math`.
 
 ## License
+
 MIT License
